@@ -28,6 +28,7 @@ get '/' do
       @teams << value[:team]
     end
   end
+
   @teams.each do |x|
     x.downcase!.gsub!(' ', '_')
   end
@@ -45,7 +46,8 @@ get '/' do
   erb :index
 end
 
-#Took team names and changed format for iteration purposes, switch back for display purposes"
+#Took team and positions array and changed format so get '/team_name' can be iterated.
+#Need to be able to switch team/position name array back to 'Team Name' to iterate @key assignment
 
 get '/simpson_slammers' do
   @lackp = csv_to_hash('lackp_starting_rosters.csv')
