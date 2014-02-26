@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Team Flinestone Fire</title>
+  </head>
+
+  <body>
+    <h1>Flinestone Fire</h1>
+
+
+    <ul>
+      <h4>Player: Position</h4>
+      <% @lackp.each do |key, value| %>
+        <% if value[:team] == "Flinestone Fire" %>
+          <li> <%= value[:first_name] %> <%= value[:last_name] %>: <%= value[:position] %> </li>
+        <% end %>
+      <% end %>
+      <li><a href="/">Back Home</a></li>
+    </ul>
+  </body>
+</html>
