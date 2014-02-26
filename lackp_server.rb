@@ -45,6 +45,8 @@ get '/' do
   erb :index
 end
 
+#Took team names and changed format for iteration purposes, switch back for display purposes"
+
 get '/simpson_slammers' do
   @lackp = csv_to_hash('lackp_starting_rosters.csv')
   @key = "Simpson Slammers"
