@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title><%= @key %></title>
+  </head>
+
+  <body>
+    <h1><%= @key %></h1>
+    <ul>
+      Player: Team
+      <% @lackp.each do |key, value| %>
+        <% if value[:position] == @key %>
+          <li> <%= value[:first_name] %> <%= value[:last_name] %>: <%= value[:team] %> </li>
+        <% end %>
+      <% end %>
+      <li><a href="/">Back Home</a></li>
+    </ul>
+  </body>
+</html>

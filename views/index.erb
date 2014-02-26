@@ -5,13 +5,19 @@
   </head>
 
   <body>
-    <h1>TEAM LIST</h1>
-
+    <h1>Team List</h1>
     <ul>
-     <li><a href="/simpson_slammers">Simpson Slammers</a></li>
-     <li><a href="/griffin_goats">Griffin Goats</a></li>
-     <li><a href="/jetson_jets">Jetson Jets</a></li>
-     <li><a href="/flinestone_fire">Flinestone Fire</a></li>
+      <% @teams.each do |x| %>
+        <a href="/<%= x%>"<li><%= x %></li></a><br>
+      <% end %>
     </ul>
+
+    <h1>Position List</h1>
+    <ul>
+      <% @positions.each do |y| %>
+        <a href="/<%= y %>"<li><%= y %></li></a><br>
+      <% end %>
+    </ul>
+
   </body>
 </html>
