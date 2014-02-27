@@ -22,9 +22,7 @@ end
 
 set :public_folder, File.dirname(__FILE__) + '/public'
 
-get '/' do
-  erb :index
-end
+
 
 before do
   @lackp = csv_to_hash('lackp_starting_rosters.csv')
@@ -41,6 +39,10 @@ before do
       @unique_positions << value[:position]
     end
   end
+end
+
+get '/' do
+  erb :index
 end
 
 get "/:team_name" do
