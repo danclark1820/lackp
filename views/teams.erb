@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title><%= @key %></title>
+    <title><%= params[:team_name] %></title>
   </head>
 
   <body>
-    <h1><%= @key %></h1>
+    <h1><%= params[:team_name].gsub('_', ' ')  %></h1>
     <ul>
       <h4>Player: Position</h4>
       <% @lackp.each do |key, value| %>
-        <% if value[:team] == @key %>
-          <li> <%= value[:first_name] %> <%= value[:last_name] %>: <%= value[:position] %> </li>
+        <% if value[:team] == params[:team_name] %>
+          <li><%= value[:first_name] %> <%= value[:last_name] %>: <%= value[:position] %>
         <% end %>
       <% end %>
       <li><a href="/">Back Home</a></li>
