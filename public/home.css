@@ -4,13 +4,21 @@ body {
     background-size: 1600px 1200px;
     background-repeat: no-repeat;
     color: #c0392b;
-    margin-top: 350px;
 
     font-family: monospace;
     font-size: 1.5em;
 }
 
+h2 {
+    margin-top: 150px;
+    margin-left: 440px;
+    font-family: monospace;
+    font-size: 5.5em;
+    color: #F0D2C2;
+}
+
 ul {
+    margin-top: 0px;
     /* Wrap the list in a green box. */
     width: 500px;
     /* border: 1px solid #c0392b;*/
@@ -24,5 +32,11 @@ li {
 }
 
 h1 {
-   margin-left: 900px
+    margin-top: 0px;
+    margin-left: 900px;
+}
+
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
 }

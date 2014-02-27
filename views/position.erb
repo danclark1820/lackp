@@ -5,13 +5,14 @@
     <link rel="stylesheet" href="../home.css">
   </head>
 
+  <h2>LACKP<h2>
   <body>
     <h1><%= params[:position_name] %></h1>
     <ul>
       <h4>Player: Team</h4>
       <% @lackp.each do |key, value| %>
         <% if value[:position] == params[:position_name] %>
-          <li> <%= value[:first_name] %> <%= value[:last_name] %>: <%= value[:team] %> </li>
+          <li> <%= value[:first_name] %> <%= value[:last_name] %>: <a href="/<%= value[:team] %>"><%= value[:team] %></a></li>
         <% end %>
       <% end %>
       <li><a href="/">Back Home</a></li>
