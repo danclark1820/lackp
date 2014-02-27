@@ -1,0 +1,28 @@
+body {
+    /* Use a "Matrix"-style color scheme. */
+    background-image:url('kickball.jpg');
+    background-size: 1600px 1200px;
+    background-repeat: no-repeat;
+    color: #c0392b;
+    margin-top: 350px;
+
+    font-family: monospace;
+    font-size: 1.5em;
+}
+
+ul {
+    /* Wrap the list in a green box. */
+    width: 500px;
+    /* border: 1px solid #c0392b;*/
+    margin-left: 850px;
+
+}
+
+li {
+    /* Add a bit more spacing between list items. */
+    padding: 5px;
+}
+
+h1 {
+   margin-left: 900px
+}

@@ -2,12 +2,13 @@
 <html lang="en">
   <head>
     <title><%= params[:position_name] %></title>
+    <link rel="stylesheet" href="../home.css">
   </head>
 
   <body>
     <h1><%= params[:position_name] %></h1>
     <ul>
-      Player: Team
+      <h4>Player: Team</h4>
       <% @lackp.each do |key, value| %>
         <% if value[:position] == params[:position_name] %>
           <li> <%= value[:first_name] %> <%= value[:last_name] %>: <%= value[:team] %> </li>
